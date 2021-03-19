@@ -19,7 +19,6 @@ Extract the archive you downloaded into /usr/local, creating a Go tree in /usr/l
 
 ```
 export GOROOT=/usr/local/go
-# export PATH=$PATH:$GOROOT/bin
 export GOPROXY=https://goproxy.io,direct
 export GOPRIVATE=*.gitlab.com,*.gitee.com,*.gitea.com
 ```
@@ -30,6 +29,6 @@ export GOPRIVATE=*.gitlab.com,*.gitee.com,*.gitea.com
 
 <br><br>
 
-执行（如果是平时的开发环境，建议在 root 和普通账号下都执行）以下命令：  
-`echo "export PATH=$PATH:$GOROOT/bin" >> ~/.bashrc`  
+普通账号下执行以下命令：  
+`echo "export PATH=$PATH:$GOROOT/bin:/home/username/go/bin" >> ~/.bashrc`  
 `source ~/.bashrc`  
