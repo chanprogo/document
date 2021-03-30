@@ -30,7 +30,7 @@ cat /etc/group | grep docker
 
 
 
-<br><br><br><br>
+<br><br>
 
 运行下面命令来确认安装结果。  
 ```
@@ -41,15 +41,6 @@ service docker restart
 检查 Docker daemon 的状态：`systemctl is-active docker`  
 
 
-<br><br>
+<br>
 
-在安装 Docker 之后，我们可以通过执行以下这条命令来确认 Docker 是否已经安装成功： `sudo docker run hello-world` 。  
-这条命令会从远程代码库中拉取 hello-world 镜像，并作为本地容器运行这个镜像。
-
-
-
-
-<br><br><br>
-
-为了安装 Docker，用户可以访问 https://docs.docker.com/install/  ，然后根据自己的系统以及想要使用的 Docker 版本，按照说明安装。
-
+`sudo docker run hello-world` 。  

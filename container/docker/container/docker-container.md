@@ -1,7 +1,6 @@
 
 ```
 docker container ls -a
-docker container rm containerNameOrID
 
 docker ps  
 
@@ -10,3 +9,7 @@ docker container stop  containerNameOrID
 
 docker container exec -it containerNameOrID bash
 ```
+
+
+
+`docker container rm [OPTIONS] CONTAINER [CONTAINER...]`  

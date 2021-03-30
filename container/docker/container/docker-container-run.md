@@ -13,17 +13,18 @@ docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 | Option | Description | 
 | :-:    | -           | 
-| --rm	| Automatically remove the container when it exits  |
-| -d	| Run container in background and print container ID|
-
-<br>
-
-| Option | Description | 
-| :-:    | -           | 
 | -i     |	Keep STDIN open even if not attached|
 | -t	 |	Allocate a pseudo-TTY|
-| --name	|	Assign a name to the container           |
-| --publish |	Publish a container’s port(s) to the host|
+
+
+
+```
+--name		        Assign a name to the container
+--detach , -d		Run container in background and print container ID
+--publish , -p		Publish a container's port(s) to the host
+--env , -e	    	Set environment variables
+--rm	        	Automatically remove the container when it exits
+```
 
 
 
