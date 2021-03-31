@@ -4,9 +4,17 @@
 
 `apt-get -y install curl`  
 
-语法：  
-curl [option] [url]
 
+
+curl - Transfers data from or to a server, 
+using one of the protocols: 
+HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, DICT, TELNET, LDAP or FILE. 
+(To transfer multiple files use wget or FTP.)  
+
+
+
+语法：  
+`curl [options] [URL...]`  
 
 
 ```
@@ -17,15 +25,22 @@ curl [option] [url]
 -C/--continue-at <offset>            断点续转
 -D/--dump-header <file>              把header信息写入到该文件中
 -e/--referer                                  来源网址
--f/--fail                                          连接失败时不显示http错误
--o/--output                                  把输出写到该文件中
--O/--remote-name                      把输出写到该文件中，保留远程文件的文件名
+
 -r/--range <range>                      检索来自HTTP/1.1或FTP服务器字节范围
--s/--silent                                    静音模式。不输出任何东西
+
+-f/--fail                           连接失败时不显示http错误                                    
+-s/--silent	                        Silent or quiet mode. Don't show progress meter or error messages.
+-S/--show-error                     When used with -s, --silent, it makes curl show an error message if it fails.
+-o/--output                         把输出写到该文件中
+-O/--remote-name                    把输出写到该文件中，保留远程文件的文件名
+
+
 -T/--upload-file <file>                  上传文件
 -u/--user <user[:password]>      设置服务器的用户和密码
 -w/--write-out [format]                什么输出完成后
 
 -x/--proxy <host[:port]>              在给定的端口上使用HTTP代理
 -#/--progress-bar                        进度条显示当前的传送状态
+
+-L/--location	       Follow redirects if the server reports that the requested page has moved (indicated with a Location: header and a 3XX response code)
 ```
