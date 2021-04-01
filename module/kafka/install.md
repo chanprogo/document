@@ -34,31 +34,11 @@ your.host.name 用公网 IP
 
 
 
-
-
-
-
-
-
-
-
-
-
-<br><br><br>
+<br><br>
 
 `cd /usr/local/kafka_2.12-2.2.0`  
- 
-
-<br>
 
 `bin/kafka-server-start.sh config/server.properties` : 常规模式启动  
 `nohup bin/kafka-server-start.sh config/server.properties >/dev/null 2>&1 &` : 进程守护模式启动
  
-
-
-<br>
-
-`/usr/local/kafka_2.12-2.2.0/bin/kafka-server-stop.sh` : Kafka 关闭命令
-
-
-
+`/usr/local/kafka_2.12-2.2.0/bin/kafka-server-stop.sh` : Kafka 关闭命令  
