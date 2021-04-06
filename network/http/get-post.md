@@ -2,25 +2,29 @@
 
 |GET|POST|
 |--|--|
-|GET参数包含在URL。|POST通过request body传递参数。|
-|GET在浏览器回退时是无害的。|POST会再次提交请求。|
-|GET产生的URL地址可以被Bookmark|POST不可以。|
-|GET请求会被浏览器主动cache|POST不会，除非手动设置。|
-|GET请求只能进行url编码|POST支持多种编码方式。|
-|GET请求参数会被完整保留在浏览器历史记录里|POST中的参数不会被保留。|
-|GET请求在URL中传送的参数是有长度限制的|POST没有|
-|对参数的数据类型，GET只接受ASCII字符|POST没有限制。|
+|GET参数包含在URL。                       |POST通过request body传递参数。|
+|GET在浏览器回退时是无害的。                |POST会再次提交请求。|
+|GET产生的URL地址可以被Bookmark            |POST不可以。|
+|GET请求会被浏览器主动cache                 |POST不会，除非手动设置。|
+|GET请求只能进行url编码                    |POST支持多种编码方式。|
+|GET请求参数会被完整保留在浏览器历史记录里     |POST中的参数不会被保留。|
+|GET请求在URL中传送的参数是有长度限制的       |POST没有|
+|对参数的数据类型，GET只接受ASCII字符        |POST没有限制。|
+
 <br/><br/>
 
 
 
-GET和POST是HTTP协议中的两种发送请求的方法。
-HTTP是 基于TCP/IP的 关于数据在万维网中如何通信 的协议。
-HTTP的底层是TCP/IP。所以GET和POST的底层也是TCP/IP，
-也就是说，GET/POST都是TCP链接，GET和POST能做的事情是一样一样的。你要给GET加上request body，给POST带上URL参数，技术上是完全行的通的。
+GET 和 POST 是 HTTP 协议中的  两种发送请求的方法。HTTP 是 基于 TCP/IP 的 关于数据 在万维网中如何通信 的协议。HTTP 的底层是 TCP/IP。所以 GET 和 POST 的底层也是TCP/IP，  
+也就是说，GET/POST 都是 TCP 链接，GET 和 POST 能做的事情是一样一样的。你要给 GET 加上 request body，给 POST 带上 URL 参数，技术上 是完全行的通的。   
+
+
+
+
 
 
 <br/>
+
 > 在我大万维网世界中，TCP就像汽车，我们用TCP来运输数据，它很可靠，从来不会发生丢件少件的现象。但是如果路上跑的全是看起来一模一样的汽车，那这个世界看起来是一团混乱，送急件的汽车可能被前面满载货物的汽车拦堵在路上，整个交通系统一定会瘫痪。为了避免这种情况发生，交通规则HTTP诞生了。HTTP给汽车运输设定了好几个服务类别，有GET, POST, PUT, DELETE等等，HTTP规定，当执行GET请求的时候，要给汽车贴上GET的标签(设置method为GET)，而且要求把传送的数据放在车顶上(url中)以方便记录。如果是POST请求，就要在车上贴上POST的标签，并把货物放在车厢里。当然，你也可以在GET的时候往车厢内偷偷藏点货物，但是这是很不光彩;也可以在POST的时候在车顶上也放一些数据，让人觉得傻乎乎的。HTTP只是个行为准则，而TCP才是GET和POST怎么实现的基本。
 
 
