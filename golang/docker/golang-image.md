@@ -1,9 +1,12 @@
 
 ## Start a Go instance in your app
 
-The most straightforward way to use this image is to use a Go container as both the build and runtime environment.  
+The most straightforward way 
+to use this image is to use a Go container 
+as both the build and runtime environment.  
 
-In your `Dockerfile`, writing something along the lines of the following will compile and run your project:   
+In your `Dockerfile`, writing something along the lines of the following 
+will compile and run your project:   
 
 
 

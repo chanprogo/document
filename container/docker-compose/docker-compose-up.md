@@ -6,6 +6,7 @@ Usage: up [options] [--scale SERVICE=NUM...] [SERVICE...]
 Options:
     -d, --detach               Detached mode: Run containers in the background, print new container names. Incompatible with
                                --abort-on-container-exit.
+                               
     --no-color                 Produce monochrome output.
     --quiet-pull               Pull without printing progress information
     --no-deps                  Don't start linked services.
