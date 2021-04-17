@@ -1,9 +1,21 @@
 
+
+
+
+`yum install redis`  
+`vi /etc/redis.conf`  
+`redis-server /etc/redis.conf`  
+
+
+
+
+
+
 ## CentOS 7 下安装配置 Redis
 
 
-一、安装
---
+### 一、安装
+
 
 下载 Redis 安装包：
 `wget http://download.redis.io/releases/redis-4.0.9.tar.gz`
@@ -27,7 +39,7 @@
 `cd /usr/local/redis-4.0.9/src/`
 `./redis-server`
 
----
+
 
 
 
@@ -54,7 +66,7 @@ requirepass yourpassword
 
 
 
----
+
 
 三、设置开机自启动
 -------
@@ -94,7 +106,7 @@ requirepass yourpassword
 
 
 
----
+
 
 四、查看是否有安装 Redis
 ---------------

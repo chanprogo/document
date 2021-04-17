@@ -20,10 +20,10 @@
 `-p ：或 --programs 显示正在使用 Socket 的程序识别码(PID)和进程名称。`  
 
 
----
 
 
-netstat 查看端口占用语法格式：  
+
+netstat 查看 端口 占用 语法格式：  
 ```
 netstat -ltunp | grep 端口号
 ```
@@ -31,7 +31,7 @@ netstat -ltunp | grep 端口号
 
 
 
----
+
 
 
 <br><br><br><br><br><br>
