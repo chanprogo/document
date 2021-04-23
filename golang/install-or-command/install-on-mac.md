@@ -9,11 +9,13 @@
 `vi ~/.zshrc`   
 
 ```
-export GOROOT=/usr/local/go1-12-17
-export GOPATH=${HOME}/go1-12-17-path
+export MYTEMP=go1-12-17
+
+export GOROOT=/usr/local/$MYTEMP
+export GOPATH=${HOME}/${MYTEMP}-path
 export GO111MODULE=off
 export GOPROXY=https://goproxy.io,direct
-export GOPRIVATE=*.gitlab.com,*.gitee.com,*.gitea.com
+export GOPRIVATE=gitlab.com,gitee.com,gitea.com,gl.zego.im
 
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```

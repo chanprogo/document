@@ -17,7 +17,7 @@ If you are upgrading from an older version of Go you must first remove the exist
 export GOROOT=/usr/local/go
 export GO111MODULE=off
 export GOPROXY=https://goproxy.io,direct
-export GOPRIVATE=*.gitlab.com,*.gitee.com,*.gitea.com
+export GOPRIVATE=gitlab.com,gitee.com,gitea.com,gl.zego.im
 ```
 
 `source /etc/profile`  
