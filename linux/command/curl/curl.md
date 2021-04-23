@@ -43,4 +43,8 @@ HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, DICT, TELNET, LDAP or FILE.
 -#/--progress-bar                        进度条显示当前的传送状态
 
 -L/--location	       Follow redirects if the server reports that the requested page has moved (indicated with a Location: header and a 3XX response code)
+
+
+-i/--include
+Include the HTTP response headers in the output. The HTTP response headers can include things like server name, cookies, date of the document, HTTP version and more...
 ```
