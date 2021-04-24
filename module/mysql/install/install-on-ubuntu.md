@@ -16,7 +16,25 @@
 
 `vim /etc/mysql/mysql.conf.d/mysqld.cnf`  
 找到如下内容的一行并注释掉：  `bind-address          = 127.0.0.1`    
-重启MySQL服务：            `systemctl restart mysql`     
+重启 MySQL 服务：            `systemctl restart mysql`     
+
+
+
+
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mypassword';`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -24,7 +42,9 @@
 <br><br>
 
 MySQL 自带的权限控制限制了外网访问 MySQL 服务器，在 Ubuntu 主机上使用命令行连接至本地 MySQL 数据库   
-`mysql -uroot -p[你的密码]`   
+`sudo mysql`  
+
+`mysql -uroot -p[yourpassword]`   
 `use mysql`   
 `select user,host from user;`  
 
@@ -32,8 +52,16 @@ MySQL 自带的权限控制限制了外网访问 MySQL 服务器，在 Ubuntu �
 
 其中[允许的ip]如果设置为%的话则表示所有ip都可以访问，[密码]表示外网访问的密码是什么。比如我设置成所有 ip 都可访问，密码是 root，则命令如下：  
 
+
+
+
+。。
+`create user 'root'@'%' identified by 'yourpassword';`  
+`grant all privileges on *.* to 'root'@'%';`   
+
 `grant all privileges on *.* to 'root'@'[允许的ip]' identified by '[密码]' with grant option;`   
 `grant all privileges on *.* to 'root'@'%' identified by 'yourpassword' with grant option;`  
+
 `flush privileges;`  
 `select user,host from user;`  
 `exit`  
