@@ -1,14 +1,6 @@
 
-
-
-
-
 开放 3306 端口：
 
+`firewall-cmd --zone=public --add-port=3306/tcp --permanent`  
 
-```
-[root@localhost ~]# firewall-cmd --zone=public --add-port=3306/tcp --permanent
-success
-[root@localhost ~]# firewall-cmd --reload
-success
-```
+`firewall-cmd --reload`  
