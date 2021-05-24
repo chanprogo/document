@@ -50,10 +50,6 @@
 ### 启动 Mysql 服务
 `systemctl start mysqld`
 
- 
-
 ### 设置开机启动
 `systemctl enable mysqld`  
 `systemctl daemon-reload`  
-
- 
