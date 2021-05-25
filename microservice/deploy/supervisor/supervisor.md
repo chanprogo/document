@@ -8,3 +8,6 @@ a number of processes on UNIX-like operating systems.
 
 `pip install supervisor`  
 
+`supervisord -v`  
+
+`yum install -y supervisor`  
