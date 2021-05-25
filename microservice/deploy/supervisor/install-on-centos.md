@@ -1,0 +1,2 @@
+
+`yum install supervisor -y`  
