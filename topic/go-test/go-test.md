@@ -3,11 +3,11 @@
 
 单元测试文件名 命名规范为 example_test.go   测试用例 的函数名称 必须以 Test 开头，例如：TestExample	
 
-go test 用例
+
 ​单元测试，覆盖 所有分支
 ​
 
-Go语言中 的测试依赖 `go test` 命令。  
+
 
 
 go test 命令 是一个 按照一定约定 和组织 的测试代码的驱动程序。 
