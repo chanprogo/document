@@ -1,17 +1,20 @@
 
 ```
-usage: git remote [-v | --verbose]
+usage: git remote [-v]
 
-   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
-   or: git remote rename <old> <new>
+   or: git remote [-v] show [-n] <name>
    or: git remote remove <name>
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   
+
+
    
    or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
 
-   or: git remote [-v | --verbose] show [-n] <name>
+   
 
    or: git remote prune [-n | --dry-run] <name>
-   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote [-v] update [-p | --prune] [(<group> | <remote>)...]
    
    or: git remote set-branches [--add] <name> <branch>...
 
