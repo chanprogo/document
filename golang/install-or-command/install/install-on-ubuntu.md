@@ -12,6 +12,7 @@
 
 ```
 export MYTEMP=go1-15-11
+
 export GOROOT=/usr/local/$MYTEMP
 export GOPATH=${HOME}/${MYTEMP}-path
 export GO111MODULE=on
