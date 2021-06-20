@@ -53,7 +53,6 @@ collect2: ld returned 1exit status
 
 `yum install -y texinfo`  
 
-`mkdir /usr/local/qconf`  
 
  
 
